@@ -7,4 +7,4 @@ DATABASE_NAME = 'cafe.db'
 
 HOST = '127.0.0.1'
 PORT = 8000
-URL = f'http://{HOST}:{PORT}/'
+URL = f'http://{HOST}:{PORT}'

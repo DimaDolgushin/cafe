@@ -4,7 +4,7 @@ from src.server.advanced.resolvers import users
 
 user_router = routers[4]
 
-@user_router.get(path='/login', response_model=dict)
+@user_router.post(path='/login', response_model=dict)
 def login(data: LoginData) -> dict:
     return users.login(data.login, data.password)
 

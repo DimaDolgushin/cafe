@@ -44,5 +44,6 @@ class OrderedDish(ModifyBaseModel):
 
 class User(ModifyBaseModel):
     login: str
+    position: str
     password: str
     power_level: int

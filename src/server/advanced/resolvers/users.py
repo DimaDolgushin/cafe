@@ -7,6 +7,7 @@ def login(login: str, password: str) -> dict:
     return {"code": 200, 'msg': 'Succesfully', 'result': pydantic_models.User(
         id=res.id,
         login=res.login,
+        position=res.position,
         password=res.password,
         power_level=res.power_level
     )} if res else {'code': 400, 'msg': 'Not found', 'result': None}

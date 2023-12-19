@@ -35,9 +35,11 @@ class OrderedDish(BaseModel):
     quantity = IntegerField(default=0)
 
 class User(BaseModel):
+    position = CharField(default='')
     login = CharField(default='')
     password = CharField(default='')
     power_level = IntegerField(default=0)
+
 
 
 db.create_tables(
